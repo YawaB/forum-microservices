@@ -6,11 +6,10 @@ LABEL authors="Brinda"
 WORKDIR /app
 
 # Copiez le fichier JAR de l'application dans le conteneur
-COPY target/ /app
+COPY target/authenticationMS-0.0.1-SNAPSHOT.jar /app
 
 # Exposez le port
-EXPOSE 8761
+EXPOSE 8087
 
 # Démarrez l'application lorsque le conteneur démarre
-CMD ["java", "-jar", "eureka-0.0.1-SNAPSHOT.jar"]
-
+CMD ["java", "-jar", "userMS-0.0.1-SNAPSHOT.jar"]

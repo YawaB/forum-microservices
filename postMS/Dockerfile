@@ -9,7 +9,7 @@ WORKDIR /app
 COPY target/ /app
 
 # Exposez le port
-EXPOSE 8761
+EXPOSE 8089
 
 # Démarrez l'application lorsque le conteneur démarre
 CMD ["java", "-jar", "eureka-0.0.1-SNAPSHOT.jar"]
